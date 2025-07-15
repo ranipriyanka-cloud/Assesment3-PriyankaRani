@@ -1,0 +1,20 @@
+{  
+  "properties": {  
+    "displayName": "Audit resources in Australia",  
+    "policyType": "Custom",  
+    "mode": "All",  
+    "metadata": {  
+      "category": "General"  
+    },  
+    "parameters": {},  
+    "policyRule": {  
+      "if": {  
+        "field": "location",  
+        "notIn": ["australiaeast", "australiasoutheast"]  
+      },  
+      "then": {  
+        "effect": "audit"  
+      }  
+    }  
+  }  
+}  
